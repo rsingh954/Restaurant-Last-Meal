@@ -60,9 +60,7 @@ li, a, button{
     font-weight: 500;
     color: #edf0f1;
 }
-img{
-    max-height: 50vh;
-}
+
   /*---------------------NAV BEGINS---------------------------- */
 header{
     display: flex;
@@ -195,9 +193,10 @@ header{
 }
 .card{
     display: flex;
+    flex-direction: column;
     border: white 2px solid;
     border-radius: 0.5rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: inherit;
     flex-direction: row;
     justify-content: flex-start;
@@ -304,7 +303,16 @@ hr{
     .menu-container-flex{
         display: none;
     }
-    
+
+
+    .dropdown-content{
+        display: flex;
+        font-size: 12px !important;
+    }
+    .nav_links li a{
+        list-style: none;
+        text-decoration: none;
+    }
   }
   
 

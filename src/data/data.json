@@ -3,37 +3,46 @@
         "name": "Ted Bundy",
         "meal": "Medium Rare Steak, Eggs over easy, Toast, Milk and Coffee",
         "description": "Ted Bundy refused to make a special request so he was given the standard.",
-        "additional info": "Ted Bundy was a serial killer"
+        "additional info": "Ted Bundy was a serial killer",
+        "src": "../src/assets/bundy.png"
     },
     {
         "name": "John Wayne Gacy",
         "meal": "12 fried shrimp, a bucket of KFC fried chicken, french fries and a pound of strawberries.",
         "description": "John Wayne Gacy used to be a manager at KFC so his request does not come as a surprise",
-        "additional info": "John Wayne Gacy was known as the clown killer because he often dressed like a clown while carrying out his devious acts"
+        "additional info": "John Wayne Gacy was known as the clown killer because he often dressed like a clown while carrying out his devious acts",
+        "src": "../src/assets/gacy.png"
     },
     {
         "name": "Timothy McVeigh",
         "meal": "Two Pints of Mint Chocolate Chip Ice Cream",
         "description": "Timothy McVeigh was an american terrorist who killed 168 people with a bomb",
-        "additional info": "He was responsible for the deadliest act of terrorism in the US prior to 911."
+        "additional info": "He was responsible for the deadliest act of terrorism in the US prior to 911.",
+        "src": "../src/assets/tim.png"
     },
     {
         "name": "Karla Faye Tucker",
         "meal": "Salad with a peach and a banana",
         "description": "Tucker murdered two men with a pickaxe",
-        "additional info": "She was a born again Christian who married a minister"
+        "additional info": "She was a born again Christian who married a minister",
+        "src": "../src/assets/karla.png"
+
     },
     {
         "name": "Jeffrey Epstein",
         "meal": "Vending Machine Snacks",
         "description": "Epstein spent his last days paying other prisoners commisary and emptying out vending machines",
-        "additional info": "A lot of controversy surrounding his death"
+        "additional info": "A lot of controversy surrounding his death",
+        "src": "../src/assets/jeff.jpg"
+
     },
     {
         "name": "Al Capone",
         "meal": "Spaghetti with Walnut sauce",
         "description": "Al Capone was a notorious mafia cappo who spent his last days in Alcatraz",
-        "additional info": "Died via syphilis because at the time there was no cure for it"
+        "additional info": "Died via syphilis because at the time there was no cure for it",
+        "src": "../src/assets/al.jpg"
+
 
     }
 ]
