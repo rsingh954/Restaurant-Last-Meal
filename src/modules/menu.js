@@ -7,30 +7,60 @@ import karla from '../assets/karla.png'
 import tim from '../assets/tim.png'
 const imgArray = [bundy,gacy,tim,karla,jeff,al]
 
+
+function createMenuItem(item, asset){
+  const container = document.createElement('div')
+  container.style.display = 'none';
+  container.classList.add('menu-container-flex')
+
+  for(let i = 0; i < item.length; i++){
+    //CREATING ELEMENTS
+    const menu = document.createElement('div')
+    const card = document.createElement('div');
+    const img = document.createElement('img')
+    const menuContainer = document.createElement('div')
+    const dropdown = document.createElement('div')
+    const name = document.createElement('h4')
+    const meal = document.createElement('p')
+    const btn = document.createElement('button')
+    const dropContent = document.createElement('div')
+    //ADDING CLASSES
+    menu.classList.add('menu');
+    card.classList.add("card")
+    menuContainer.classList.add('menu-container')
+    dropdown.classList.add('dropdown')
+    dropContent.classList.add('dropdown-content')
+    btn.classList.add('dropdown')
+    //HANDLE IMAGES
+    img.style.height = "100px";
+    img.style.width = '100px';
+    img.alt = 'Meal'
+    img.src = asset[i];
+
+    //ADDING DATA
+    name.textContent = item[i].name
+    meal.textContent = item[i].meal
+    btn.textContent = 'Additional Info'
+    dropContent.textContent = item[i].description
+    dropdown.appendChild(btn)
+    dropdown.appendChild(dropContent)
+    menuContainer.appendChild(name)
+    menuContainer.appendChild(meal)
+    menuContainer.appendChild(dropdown)
+    card.appendChild(img)
+    card.appendChild(menuContainer)
+    menu.appendChild(card)
+    container.appendChild(menu)
+  }
+
+  return container
+
+}
 const menu = () =>{
     const content = document.querySelector('#content')
-    const container = document.createElement('div')
-    container.classList.add('menu-container-flex')
-    container.style.display = 'none'
-    for(let i = 0; i < data.length; i++){
-        const div = document.createElement('div')
-        div.classList.add('menu')
-        div.innerHTML = `
-        <div class="card">
-        <img src="${imgArray[i]}" alt="Meal" style = 'height: 100px; width: 100px;'>
-        <div class="menu-container">
-          <h4><b>The ${data[i].name}</b></h4>
-          <p>${data[i].meal}</p>
-          <div class = "dropdown">
-            <button class = "dropdown">Additional Info </button>
-            <div class = "dropdown-content">${data[i].description}</div>
-        <div>
-        </div>
-      </div> 
-        `
-        container.appendChild(div)
-    }
-    content.appendChild(container)  
+     content.appendChild(
+       createMenuItem(data, imgArray)
+     )  
 }
 
 export {menu}
