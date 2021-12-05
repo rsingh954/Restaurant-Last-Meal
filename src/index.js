@@ -16,6 +16,8 @@ menuItem.addEventListener('click', e =>{
     const {target} = e
     if(target.innerHTML == 'Menu'){menuClick()}
     if(target.innerHTML == 'About'){aboutClick()}
+    if(target.innerHTML == 'Last Meals'){home()}
+
 })
 
 const menuClick = () =>{
@@ -47,6 +49,15 @@ const aboutClick = () => {
     else {
         aboutContainer.style.display = 'flex'
     }
+}
 
+const home = () =>{
+    const container = document.querySelector('.container')
+    const menuContainer = document.querySelector('.menu-container-flex')
+    const aboutContainer = document.querySelector('.about')
+    console.log("AYYYE")
+    menuContainer.style.display = 'none'
+    aboutContainer.style.display = 'none'
+    container.style.display = 'flex'
 
 }
