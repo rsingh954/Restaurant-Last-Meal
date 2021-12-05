@@ -256,6 +256,12 @@ hr{
     border-radius: 1em;
     background: rgb(48, 47, 47);
 }
+.bi-telephone-fill{
+    margin-top: 2px;
+}
+.bi-envelope-fill{
+    margin-top: 3px;
+}
 .email{
     display: flex;
     flex-direction: row;

@@ -10,7 +10,7 @@ div.innerHTML = `
     <h1>About</h1>
     </div>
     <div class = "about-content">
-    What We Do: At Last Meal we serve the last meals of the most notorious human \n
+    What We Do: At Last Meal we serve the last meals of the most despicable human \n
     beings. Come by and give us a try!
     <hr/>
         <div class = "phone">
