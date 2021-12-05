@@ -1,4 +1,11 @@
 import data from '../data/data.json' 
+import al from '../assets/al.jpg'
+import bundy from '../assets/bundy.png'
+import gacy from '../assets/gacy.png'
+import jeff from '../assets/jeff.jpg'
+import karla from '../assets/karla.png'
+import tim from '../assets/tim.png'
+const imgArray = [bundy,gacy,tim,karla,jeff,al]
 
 const menu = () =>{
     const content = document.querySelector('#content')
@@ -10,7 +17,7 @@ const menu = () =>{
         div.classList.add('menu')
         div.innerHTML = `
         <div class="card">
-        <img src="${data[i].src}" alt="Meal" style = 'height: 100px; width: 100px;'>
+        <img src="${imgArray[i]}" alt="Meal" style = 'height: 100px; width: 100px;'>
         <div class="menu-container">
           <h4><b>The ${data[i].name}</b></h4>
           <p>${data[i].meal}</p>

@@ -4,12 +4,6 @@ import { footer } from "./modules/footer";
 import { menu } from "./modules/menu";
 import { about } from "./modules/about";
 import data from '../src/data/data.json'
-import al from './assets/al.jpg'
-import bundy from './assets/bundy.png'
-import gacy from './assets/gacy.png'
-import jeff from './assets/jeff.jpg'
-import karla from './assets/karla.png'
-import tim from './assets/tim.png'
 
 
 
