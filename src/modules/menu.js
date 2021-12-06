@@ -22,6 +22,7 @@ function createMenuItem(item, asset){
     const dropdown = document.createElement('div')
     const name = document.createElement('h4')
     const meal = document.createElement('p')
+    const price = document.createElement('p')
     const btn = document.createElement('button')
     const dropContent = document.createElement('div')
     //ADDING CLASSES
@@ -38,14 +39,16 @@ function createMenuItem(item, asset){
     img.src = asset[i];
 
     //ADDING DATA
-    name.textContent = item[i].name
+    name.textContent = "The "  + item[i].name
     meal.textContent = item[i].meal
+    price.textContent = "$" + item[i].price
     btn.textContent = 'Additional Info'
     dropContent.textContent = item[i].description
     dropdown.appendChild(btn)
     dropdown.appendChild(dropContent)
     menuContainer.appendChild(name)
     menuContainer.appendChild(meal)
+    menuContainer.appendChild(price)
     menuContainer.appendChild(dropdown)
     card.appendChild(img)
     card.appendChild(menuContainer)
