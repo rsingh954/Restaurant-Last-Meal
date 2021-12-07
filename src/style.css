@@ -133,7 +133,7 @@ header{
 }
 .blood {
     color:gold;
-    text-shadow:
+    /* text-shadow:
     4px 4px 1px #300000,
     4px 6px 1px #400000,
     4px 8px 1px #500000,
@@ -150,9 +150,9 @@ header{
     4px 30px 1px #FA0000,
     4px 32px 1px #FB0000,
     4px 34px 1px #FC0000,
-    4px 36px 1px #FD0000,
+    4px 36px 1px #FD0000,                                                           
     4px 38px 1px #FE0000,
-    4px 40px 2px #FF0000;
+    4px 40px 2px #FF0000; */
 }
  /* --------------------HEADLINE ENDS--------------------------*/
 
@@ -197,6 +197,7 @@ header{
 .card{
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     border: white 2px solid;
     border-radius: 0.5rem;
     flex-wrap: nowrap;
