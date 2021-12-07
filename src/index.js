@@ -38,7 +38,8 @@ const menuClick = () =>{
             menuContainer.style.display = 'flex'
         }
 }
-
+const menuBtn = document.querySelector('.menuBtn')
+menuBtn.addEventListener('click', menuClick)
 
 const aboutClick = () => {
     const container = document.querySelector('.container')
